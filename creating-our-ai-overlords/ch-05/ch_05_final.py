@@ -153,3 +153,17 @@ print('loss:', loss)
  [0.33333233 0.3333324  0.33333528]]
 loss: 1.0986104
 '''
+
+
+
+# -- -----------------------------
+predictions = np.argmax(activation2.output, axis=1)
+
+# If targets are one-hot encoded, convert them:
+if len(y.shape) == 2:
+    y = np.argmax(y, axis=1)
+
+accuracy = np.mean(predictions==y)
+
+# Print accuracy
+print('acc:', accuracy)
