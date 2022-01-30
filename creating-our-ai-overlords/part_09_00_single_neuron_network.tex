@@ -1,0 +1,36 @@
+# B"H
+
+Open below in https://www.overleaf.com/project/61f66d4774145336742630fe.
+
+\documentclass[a4paper,12pt]{article}
+\usepackage{xcolor}
+\begin{document}
+
+
+
+\[ \frac{\color{red}{\partial}}{\color{red}{\partial} \color{blue}{x_0}} Network = \frac{\color{red}{d} \color{black}{ReLU(...)}}{\color{red}{d} \color{black}{sum(...)}} \cdot \frac{\color{red}{\partial} \color{black}{sum(...)}}{\color{red}{\partial} \color{black}{mul(\color{blue}{x_0}, \color{black}{w_0})}} \cdot 
+\frac{\color{red}{\partial} \color{black}{mul(\color{blue}{x_0}, \color{black}{w_0})}}{\color{red}{\partial} \color{blue}{x_0}} \] 
+
+
+\[ \frac{\color{red}{\partial}}{\color{red}{\partial} \color{blue}{w_0}} Network = \frac{\color{red}{d} \color{black}{ReLU(...)}}{\color{red}{d} \color{black}{sum(...)}} \cdot \frac{\color{red}{\partial} \color{black}{sum(...)}}{\color{red}{\partial} \color{black}{mul(\color{black}{x_0}, \color{blue}{w_0})}} \cdot 
+\frac{\color{red}{\partial} \color{black}{mul(\color{black}{x_0}, \color{blue}{w_0})}}{\color{red}{\partial} \color{blue}{w_0}} \] 
+
+
+\[ \frac{\color{red}{\partial}}{\color{red}{\partial} \color{blue}{x_1}} Network = \frac{\color{red}{d} \color{black}{ReLU(...)}}{\color{red}{d} \color{black}{sum(...)}} \cdot \frac{\color{red}{\partial} \color{black}{sum(...)}}{\color{red}{\partial} \color{black}{mul(\color{blue}{x_1}, \color{black}{w_1})}} \cdot 
+\frac{\color{red}{\partial} \color{black}{mul(\color{blue}{x_1}, \color{black}{w_1})}}{\color{red}{\partial} \color{blue}{x_1}} \] 
+
+\[ \frac{\color{red}{\partial}}{\color{red}{\partial} \color{blue}{w_1}} Network = \frac{\color{red}{d} \color{black}{ReLU(...)}}{\color{red}{d} \color{black}{sum(...)}} \cdot \frac{\color{red}{\partial} \color{black}{sum(...)}}{\color{red}{\partial} \color{black}{mul(\color{black}{x_1}, \color{blue}{w_1})}} \cdot 
+\frac{\color{red}{\partial} \color{black}{mul(\color{black}{x_1}, \color{blue}{w_1})}}{\color{red}{\partial} \color{blue}{w_1}} \] 
+
+
+\[ \frac{\color{red}{\partial}}{\color{red}{\partial} \color{blue}{x_2}} Network = \frac{\color{red}{d} \color{black}{ReLU(...)}}{\color{red}{d} \color{black}{sum(...)}} \cdot \frac{\color{red}{\partial} \color{black}{sum(...)}}{\color{red}{\partial} \color{black}{mul(\color{blue}{x_2}, \color{black}{w_2})}} \cdot 
+\frac{\color{red}{\partial} \color{black}{mul(\color{blue}{x_2}, \color{black}{w_2})}}{\color{red}{\partial} \color{blue}{x_2}} \] 
+
+\[ \frac{\color{red}{\partial}}{\color{red}{\partial} \color{blue}{w_2}} Network = \frac{\color{red}{d} \color{black}{ReLU(...)}}{\color{red}{d} \color{black}{sum(...)}} \cdot \frac{\color{red}{\partial} \color{black}{sum(...)}}{\color{red}{\partial} \color{black}{mul(\color{black}{x_2}, \color{blue}{w_2})}} \cdot 
+\frac{\color{red}{\partial} \color{black}{mul(\color{black}{x_2}, \color{blue}{w_2})}}{\color{red}{\partial} \color{blue}{w_2}} \] 
+
+\[ \frac{\color{red}{\partial}}{\color{red}{\partial} \color{blue}{b}} Network = \frac{\color{red}{d} \color{black}{ReLU(...)}}{\color{red}{d} \color{black}{sum(...)}} \cdot \frac{\color{red}{\partial} \color{black}{sum(...)}}{\color{red}{\partial} \color{blue}{b}} \] 
+
+\end{document}
+
+
